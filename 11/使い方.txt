@@ -1,0 +1,26 @@
+apache2 webサーバ　kali linux 
+”sudo systemctl status apache2” サーバのステータスを確認。
+
+
+ディレクトリを作成
+```
+sudo mkdir listing1
+sudo mkdir listing2
+```
+
+/var/www/html]
+$ ls -aslrth lis*      
+   
+listing1:
+合計 12K
+4.0K -rw-r--r-- 1 root root    7  9月  7 11:27 secret1.txt
+4.0K drwxr-xr-x 2 root root 4.0K  9月  7 11:27 .
+4.0K drwxr-xr-x 6 root root 4.0K  9月 10 16:37 ..
+
+listing2:
+合計 12K
+4.0K -rw-r--r-- 1 root root    7  9月  7 11:27 secret2.txt
+4.0K drwxr-xr-x 2 root root 4.0K  9月  7 11:27 .
+4.0K drwxr-xr-x 6 root root 4.0K  9月 10 16:37 ..
+
+
