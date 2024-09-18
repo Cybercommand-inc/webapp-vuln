@@ -1,0 +1,9 @@
+{
+    "crawler":{
+        "crawl_limits":{
+            "maximum_crawl_time":1,
+            "maximum_request_count":0,
+            "maximum_unique_locations":1
+        }
+    }
+}
