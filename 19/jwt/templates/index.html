@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JWT脆弱性テスト</title>
+</head>
+<body>
+    <h1>JWT脆弱性のテスト</h1>
+    <form action="/no-signature-verification" method="GET">
+    <label for="token">JWTトークン（署名検証なし）:</label>
+    <input type="text" id="token" name="token">
+    <button type="submit">送信</button>
+</form>
+
+<form action="/none-algorithm" method="GET">
+    <label for="token">JWTトークン（Noneアルゴリズム）:</label>
+    <input type="text" id="token" name="token">
+    <button type="submit">送信</button>
+</form>
+
+<form action="/weak-hmac-secret" method="GET">
+    <label for="token">JWTトークン（弱いHMAC秘密鍵）:</label>
+    <input type="text" id="token" name="token">
+    <button type="submit">送信</button>
+</form>
+
+<form action="/arbitrary-jku" method="GET">
+    <label for="token">JWTトークン（任意のJKUヘッダー）:</label>
+    <input type="text" id="token" name="token">
+    <button type="submit">送信</button>
+</form>
+
+<form action="/arbitrary-x5u" method="GET">
+    <label for="token">JWTトークン（任意のX5Uヘッダー）:</label>
+    <input type="text" id="token" name="token">
+    <button type="submit">送信</button>
+</body>
+</html>
