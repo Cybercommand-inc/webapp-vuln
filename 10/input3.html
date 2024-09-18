@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoS Example</title>
+    <script>
+        function handleInput() {
+            // Get the regex pattern from the URL query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const regexPattern = urlParams.get('pattern');
+
+            if (!regexPattern) {
+                console.error('No pattern found in the URL query parameter.');
+                return;
+            }
+
+            try {
+                // Create a regular expression from the pattern
+                var regex = new RegExp(regexPattern);
+
+                // Generate a very large input string
+                var largeTestData = 'a'.repeat(111100); // 100,000 characters
+
+                // Start the test
+                console.time('RegExp Test');
+                var result = regex.test(largeTestData);
+                console.timeEnd('RegExp Test');
+                console.log('Result:', result);
+            } catch (e) {
+                console.error('Error:', e);
+            }
+        }
+
+        // Execute the function when the document is loaded
+        document.addEventListener('DOMContentLoaded', handleInput);
+    </script>
+</head>
+<body>
+    <h1>DoS Example Using RegExp</h1>
+    <p>This page reads a regular expression pattern from the URL query parameter and tests it.</p>
+    <p>Example URL: <code>index.html?pattern=(a%2B%7Cb%2B)%7B100%2C200%7D</code></p>
+</body>
+</html>
+
