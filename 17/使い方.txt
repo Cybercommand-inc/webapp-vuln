@@ -1,0 +1,14 @@
+dotnet入れる
+$ sudo apt install dotnet8
+
+アプリディレクトリ作成
+$ dotnet new mvc -n vulnerableApplication
+
+VulnerableController.cs
+ ConfigController.cs
+ UserController.cs
+ KeyController.cs
+を作成
+
+開始
+dotnet run
