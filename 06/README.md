@@ -18,7 +18,7 @@ $ pip install -r requirements.txt
 $ python3 dsvw.py 
 ```
 
-5. ブラウザからアクセスして確認
+4. ブラウザからアクセスして確認
 ```
 http://localhost:65412
 ```
