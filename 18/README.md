@@ -43,16 +43,9 @@ $ pip3 install flask lxml
 
 3.ディレクトリ構成
 ```
-$ mkdir xpath
-$ mkdir templates
 $ cd xpath
 $ ls
-[~/xpath]
-templates
 app.py
-$ cd templates
-[~/xpath/templates]
-$ ls
 index.html
 ```
 
