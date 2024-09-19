@@ -148,7 +148,7 @@ echo "This is a test email" | mail -s "Test Subject" mailuser2@srt
 
 
 
-サンプルburpリクエスト
+send.phpを使用しているサンプルburpリクエスト
 ```
 POST /send.php HTTP/1.1
 Host: 192.168.7.246
