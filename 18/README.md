@@ -7,7 +7,7 @@
 まず、virtualenvをインストールします。Pythonのパッケージ管理ツールであるpipを使ってインストールします。
 
 ```
-pip install virtualenv
+pip3 install virtualenv
 
 
 仮想環境の作成
@@ -33,10 +33,8 @@ source myenv/bin/activate
  パッケージのインストール
 仮想環境がアクティベートされている状態で、pipを使ってパッケージをインストールします。これにより、仮想環境内にのみパッケージがインストールされます。
 
-pip install package_name
+pip3 install package_name
 ```
-
-
 
 2. 必要なパッケージのインストール
 ``` 
@@ -45,13 +43,13 @@ $ pip3 install flask lxml
 
 3.ディレクトリ構成
 ```
-$ mkdir xpath 
+$ mkdir xpath
+$ mkdir templates
 $ cd xpath
+$ ls
 [~/xpath]
 templates
 app.py
-$ mkdir templates
-$ ls
 $ cd templates
 [~/xpath/templates]
 $ ls
