@@ -59,5 +59,7 @@ index.html
 ```
 
 4. アプリケーションスタート
+```
 [~/xpath]
 $ python3 app.py
+```
