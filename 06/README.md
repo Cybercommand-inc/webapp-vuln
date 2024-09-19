@@ -1,4 +1,4 @@
-# OSコマンドインジェクション
+# 06-OSコマンドインジェクション
 
 ### 環境構築
 1. Damn Small Vulnerable Web (DSVW) (脆弱性のあるwebapp)のダウンロード
