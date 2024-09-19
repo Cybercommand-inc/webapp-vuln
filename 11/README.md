@@ -1,8 +1,7 @@
 # 11-ディレクトリリスティング
 ### 環境構築
 1. 好みをwebサーバを構築。
-
-2. 例　Debian系のlinuxにApacheウェブサーバーをインストールする手順
+2. 例　Debian系のlinuxにApacheウェブサーバーをインストールする手順 
   ```
 ステップ 1: システムを更新する
 ターミナルを開き、次のコマンドを実行してシステムパッケージを更新します。
@@ -42,18 +41,15 @@ sudo systemctl restart apache2
 デフォルトのウェブサイトのルートは /var/www/html です。ここにHTMLファイルを配置して、サイトをホストできます。
 sudo nano /var/www/html/index.html
 ```
-
-3.サーバのステータスを確認。
+3. サーバのステータスを確認。
 ```
  $ sudo systemctl status apache2   
 ```
-
-4. ディレクトリを作成
+4. ディレクトリを作成 
 ```
 sudo mkdir listing1
 sudo mkdir listing2
 ```
-
 5. ディレクトリ構成を確認
 ```
 $ pwd
@@ -73,3 +69,5 @@ listing2:
 4.0K drwxr-xr-x 2 root root 4.0K    .
 4.0K drwxr-xr-x 6 root root 4.0K    ..
 ```  
+
+
