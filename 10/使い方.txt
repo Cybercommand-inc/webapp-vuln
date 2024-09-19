@@ -1,7 +1,0 @@
-”input3.html”を作成
-
-http://192.168.7.99/input3.html?pattern=any“ 
-　へアクセス
-
-burpを確認
-burp バージョン “v2024.7.6”
