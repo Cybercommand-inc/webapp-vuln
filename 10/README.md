@@ -50,5 +50,7 @@ sudo nano /var/www/html/index.html
 　へアクセス
 
 6. burpを確認
+```
 burp バージョン “v2024.7.6”
+```
 
