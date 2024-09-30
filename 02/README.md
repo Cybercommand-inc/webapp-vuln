@@ -2,7 +2,8 @@
 
 ### 環境構築
 1. webapp-vulnのフォルダに移動する
-```$ cd $PROJECT_DIR/webapp-vuln
+```
+$ cd $PROJECT_DIR/webapp-vuln
 ```
 
 2. brokencrystals(脆弱性のあるwebapp)のダウンロード
