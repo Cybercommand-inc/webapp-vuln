@@ -22,12 +22,15 @@ $ git clone https://github.com/stamparm/DSVW.git
 $ pip install -r requirements.txt
 ```
 
-5. サービスの起動
+5. ”dsvw.py”のいれかえ
+$cp dsvw.py dsvw1.py
+   
+7. サービスの起動。レポジトリ内の”dsvw.py”を使用
 ```
 $ python3 dsvw.py
 ```
 
-6. ブラウザからアクセスして確認
+7. ブラウザからアクセスして確認
 ```
 http://localhost:65412
 ```
