@@ -6,28 +6,28 @@
 $ cd $HOME/projects/webapp-vuln
 ```
 
-3. pythonとpipのバージョン確認
+2. pythonとpipのバージョン確認
 ```
 $ python --version
 $ pip --version
 ```
 
-5. Damn Small Vulnerable Web (DSVW) (脆弱性のあるwebapp)のダウンロード
+3. Damn Small Vulnerable Web (DSVW) (脆弱性のあるwebapp)のダウンロード
 ```
 $ git clone https://github.com/stamparm/DSVW.git
 ```
 
-7. 必要なライブラリのインストール
+4. 必要なライブラリのインストール
 ```
 $ pip install -r requirements.txt
 ```
 
-9. サービスの起動
+5. サービスの起動
 ```
 $ python3 dsvw.py
 ```
 
-10. ブラウザからアクセスして確認
+6. ブラウザからアクセスして確認
 ```
 http://localhost:65412
 ```
