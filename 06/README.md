@@ -23,9 +23,11 @@ $ pip install -r requirements.txt
 ```
 
 5. ”dsvw.py”のいれかえ
+```
 $cp dsvw.py dsvw1.py
-   
-7. サービスの起動。レポジトリ内の”dsvw.py”を使用
+``` 
+
+6. サービスの起動。レポジトリ内の”dsvw.py”を使用
 ```
 $ python3 dsvw.py
 ```
