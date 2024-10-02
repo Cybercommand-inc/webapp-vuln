@@ -22,7 +22,7 @@ $ git clone https://github.com/stamparm/DSVW.git
 $ pip install -r requirements.txt
 ```
 
-5. ”dsvw.py”のいれかえ
+5. レポジトリ内の”dsvw.py”のいれかえ
 ```
 $cp dsvw.py dsvw1.py
 ``` 
