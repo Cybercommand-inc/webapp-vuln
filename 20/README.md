@@ -1,30 +1,27 @@
-# 20-アクセス制御の不備、欠落
+# 16-ユーザーID等の調査
 
 ### 環境構築
-
-1. 必要なパッケージ
-```
-$ pip3 install Flask Flask-CORS
-```
-
-2. ディレクトリ構造
+1. vulnerableAppディレクトリを作成
 
 ```
-/corsVulnerabilityApp
-│
-├── /static (オプショナル、JSやCSSなどの静的アセット用)
-│
-├── app.py                   # メインのFlaskアプリケーション
-│
-└── test.html                # CORS脆弱性をテストするための外部HTMLファイル
+ $ mkdir vulnerableApp 
 ```
 
-3. Linux PC1でコマンドを実行 
+2. データ作成
 ```
-$ python3 app.py
+index.html
+login.php
+dashboard.php
+style.css
+```
+を作成
+
+3. サーバ開始
+```
+vulnerableApp$ php -S 192.168.7.246:5000
 ```
 
-4. Linux PC2でブラウザから
-```
-file:///path/to/test.html　へアクセス
-```
+4. ウェブブラウザを開き、次のURLにアクセスしてログインページを表示します:
+http://192.168.7.246:5000/ へアクセス
+
+5. ユーザー名”user”とパスワード”password”を使ってログインします。ログイン後、URL内のセッショントークン　”dashboard.php?token=...”を確認してください。

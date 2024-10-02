@@ -1,27 +1,21 @@
-# 16-ユーザーID等の調査
+# 09-ローカルファイルインクルード
 
 ### 環境構築
-1. vulnerableAppディレクトリを作成
-
+1. "lfi.php"を作成
+   
+2. コマンドでwebサーバ開始
 ```
- $ mkdir vulnerableApp 
-```
-
-2. データ作成
-```
-index.html
-login.php
-dashboard.php
-style.css
-```
-を作成
-
-3. サーバ開始
-```
-vulnerableApp$ php -S 192.168.7.246:5000
+$ php -S 192.168.7.246:5000
 ```
 
-4. ウェブブラウザを開き、次のURLにアクセスしてログインページを表示します:
-http://192.168.7.246:5000/ へアクセス
+3. ブラウザからhttp://192.168.7.246:5000/lfi.php?file=   　
+へアクセス。
 
-5. ユーザー名”user”とパスワード”password”を使ってログインします。ログイン後、URL内のセッショントークン　”dashboard.php?token=...”を確認してください。
+phpバージョン
+```
+$ php -v
+PHP 8.1.2-1ubuntu2.18 (cli) (built: Jun 14 2024 15:52:55) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.18, Copyright (c), by Zend Technologies
+```
