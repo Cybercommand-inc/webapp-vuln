@@ -1,4 +1,4 @@
-# 13-意図しないリダイレクト
+# 29-意図しないリダイレクト
 1. brokencrystals(脆弱性のあるwebapp)のダウンロード
 ```
 $ git clone git@github.com:NeuraLegion/brokencrystals.git
