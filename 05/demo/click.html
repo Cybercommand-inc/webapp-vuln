@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Demo</title>
+    <style>
+        button {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            font-size: 20px;
+            padding: 10px;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            /* opacity: 0; 透明にする */
+            z-index: 2; /* ボタンより上に配置してクリックジャッキングを狙う */
+            border: none; 
+        }
+    </style>
+</head>
+<body>
+    <button>無害なボタン</button>
+    <iframe src="submit.html"></iframe>
+</body>
+</html>
