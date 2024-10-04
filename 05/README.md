@@ -1,9 +1,9 @@
 # 05-クリックジャッキング
 
 ### 環境構築
-こちらのREADMEを参照
+以下を参照してください。
 
-https://github.com/Cybercommand-inc/webapp-vuln/tree/main/02
+https://github.com/Cybercommand-inc/webapp-vuln#user-content-broken-crystalsの環境構築
 
 ### PoC1
 1. 罠サーバーを立ち上げる
