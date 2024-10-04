@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoS Example</title>
+    <title>DoSの例</title>
     <script>
         function handleInput() {
-            // Get the regex pattern from the URL query parameters
+            // URLのクエリパラメータから正規表現パターンを取得
             const urlParams = new URLSearchParams(window.location.search);
             const regexPattern = urlParams.get('pattern');
 
             if (!regexPattern) {
-                console.error('No pattern found in the URL query parameter.');
+                console.error('URLのクエリパラメータにパターンが見つかりません。');
                 return;
             }
 
             try {
-                // Create a regular expression from the pattern
+                // パターンから正規表現を作成
                 var regex = new RegExp(regexPattern);
 
-                // Generate a very large input string
-                var largeTestData = 'a'.repeat(111100); // 100,000 characters
+                // 非常に大きな入力文字列を生成
+                var largeTestData = 'a'.repeat(111100); // 100,000文字
 
-                // Start the test
-                console.time('RegExp Test');
+                // テストを開始
+                console.time('正規表現テスト');
                 var result = regex.test(largeTestData);
-                console.timeEnd('RegExp Test');
-                console.log('Result:', result);
+                console.timeEnd('正規表現テスト');
+                console.log('結果:', result);
             } catch (e) {
-                console.error('Error:', e);
+                console.error('エラー:', e);
             }
         }
 
-        // Execute the function when the document is loaded
+        // ドキュメントが読み込まれたときに関数を実行
         document.addEventListener('DOMContentLoaded', handleInput);
     </script>
 </head>
 <body>
-    <h1>DoS Example Using RegExp</h1>
-    <p>This page reads a regular expression pattern from the URL query parameter and tests it.</p>
-    <p>Example URL: <code>index.html?pattern=(a%2B%7Cb%2B)%7B100%2C200%7D</code></p>
+    <h1>正規表現を使用したDoSの例</h1>
+    <p>このページはURLのクエリパラメータから正規表現パターンを読み取り、それをテストします。</p>
+    <p>例のURL: <code>index.html?pattern=(a%2B|b%2B|c%2B){28%2C415}</code></p>
 </body>
 </html>
+
+
 
