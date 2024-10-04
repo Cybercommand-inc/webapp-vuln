@@ -13,7 +13,7 @@ $ ls # webapp-vulnフォルダが作成されている。
 $ cd webapp-vuln
 ```
 
-### <a id="broken-crystals")>BROKEN CRYSTALSの環境構築</a>
+### BROKEN CRYSTALSの環境構築
 ```
 $ cd $HOME/projects/webapp-vuln
 $ git clone git@github.com:NeuraLegion/brokencrystals.git
