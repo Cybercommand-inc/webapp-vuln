@@ -13,7 +13,7 @@ $ ls # webapp-vulnフォルダが作成されている。
 $ cd webapp-vuln
 ```
 
-### BROKEN CRYSTALSの環境構築
+### <a id="broken-crystals)>BROKEN CRYSTALSの環境構築</a>
 ```
 $ cd $HOME/projects/webapp-vuln
 $ git clone git@github.com:NeuraLegion/brokencrystals.git
@@ -21,7 +21,7 @@ $ cd brokencrystals
 $ docker compose --file=docker-compose.local.yml up -d --build
 ```
 
-ブラウザからアクセスして確認します。
+- ブラウザからアクセスして確認します。
 ```
 http://<PCのIP>:3000
 ```
@@ -38,7 +38,7 @@ $ python dsvw.py
 
 ```
 
-ブラウザからアクセスして確認します。
+- ブラウザからアクセスして確認します。
 ```
 http://<PCのIP>:65412
 ```
