@@ -52,8 +52,8 @@ $ node server.js
 node server.js 
 サーバーが http://localhost:3000 で実行中
 
-3. index.htmlとattack.htmlを別のサーバにいれる。nginx,apache
-/var/www/html
+3. index.htmlとattack.htmlを別のサーバの”/var/www/html/”にいれる。nginx,apache
+
 
 4. Proxyの設定
 Burpを立ち上げて、FireFoxのFoxyProxyで、Burpを設定します。
