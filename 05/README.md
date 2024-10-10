@@ -41,6 +41,8 @@ http://<PCのIP>:8000/click.html
 
 ### PoC3
 ```
+$ cd $PROJECT_DIR/05/PoC3
+
 1. npm 関係コマンドを実行
 $ sudo npm init -y
 $ sudo npm install express
