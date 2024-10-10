@@ -37,4 +37,26 @@ Burpを立ち上げて、FireFoxのFoxyProxyで、Burpを設定します。
 http://<PCのIP>:8000/click.html
 ```
 
-4. `クリック`をクリックして、BurpのHTTP histroyを確認。
+4. `クリック`をクリックして、BurpのHTTP historyを確認。
+
+### PoC3
+```
+1. npm 関係コマンドを実行
+$ sudo npm init -y
+$ sudo npm install express
+
+2. "node"でサーバーを立ち上げる。
+$ node server.js
+node server.js 
+サーバーが http://localhost:3000 で実行中
+
+3. index.htmlとattack.htmlを別のサーバにいれる。
+
+4. Proxyの設定
+Burpを立ち上げて、FireFoxのFoxyProxyで、Burpを設定します。
+
+5. 罠ページにブラウザからアクセス
+[http://<PCのIP>/attack.html](http://<PCのIP>/attack.html)
+
+6. `ここをクリックして賞品を獲得！`をクリックして、BurpのHTTP historyを確認。
+```
