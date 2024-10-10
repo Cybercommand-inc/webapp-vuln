@@ -28,12 +28,10 @@ http://<PCのIP>:3000
 
 ### DSVWの環境構築
 ```
-$ cd $HOME/projects/webapp-vuln
+$ cd $HOME/projects/webapp-vuln/DSVW
 $ python --version # pythonのバージョンが3以上であることの確認
-$ pip --version # pipのバージョン確認
-$ git clone https://github.com/stamparm/DSVW.git
-$ cd DSVW
-$ pip install -r requirements.txt
+$ pip --version # pipのバージョンが24以上であることの確認
+$ pip install lxml
 $ python dsvw.py
 
 ```
