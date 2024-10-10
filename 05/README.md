@@ -52,13 +52,14 @@ $ node server.js
 node server.js 
 サーバーが http://localhost:3000 で実行中
 
-3. index.htmlとattack.htmlを別のサーバにいれる。
+3. index.htmlとattack.htmlを別のサーバにいれる。nginx,apache
+/var/www/html
 
 4. Proxyの設定
 Burpを立ち上げて、FireFoxのFoxyProxyで、Burpを設定します。
 
 5. 罠ページにブラウザからアクセス
-[http://<PCのIP>/attack.html](http://<PCのIP>/attack.html)
+http://<PCのIP>/attack.html
 
 6. `ここをクリックして賞品を獲得！`をクリックして、BurpのHTTP historyを確認。
 ```
