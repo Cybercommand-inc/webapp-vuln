@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アカウント管理</title>
+</head>
+<body>
+  <h1>アカウント管理</h1>
+  <p>ようこそ、ジョン・ドウさん！</p>
+
+  <form id="deleteForm" action="http://192.168.7.246:3000/delete-account" method="POST">
+    <input type="hidden" name="userId" value="1">
+    <button type="submit">アカウントを削除する</button>
+  </form>
+</body>
+</html>

