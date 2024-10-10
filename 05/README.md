@@ -54,7 +54,6 @@ node server.js
 
 3. index.htmlとattack.htmlを別のサーバの”/var/www/html/”にいれる。nginx,apache
 
-
 4. Proxyの設定
 Burpを立ち上げて、FireFoxのFoxyProxyで、Burpを設定します。
 
