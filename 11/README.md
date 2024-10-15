@@ -7,14 +7,15 @@
 Pythonのパッケージ管理ツールであるpipを使ってインストールします。
 
 ```
-pip3 install virtualenv
+$ pip3 install virtualenv
 ```
 
 2. 仮想環境の作成
-仮想環境を作成します。仮想環境のディレクトリを指定することで、指定した場所に仮想環境が作成されます。ここで、webapp-vulnは仮想環境の名前で、任意の名前をつけることができます。
+仮想環境を作成します。仮想環境のディレクトリを指定することで、指定した場所に仮想環境が作成されます。ここで、poc-env-11は仮想環境の名前で、任意の名前をつけることができます。
 
 ```
-$ virtualenv webapp-vuln
+$ cd $HOME/projects/webapp-vuln
+$ virtualenv poc-env-11
 ```
 
 3. 仮想環境のアクティベート
@@ -22,31 +23,42 @@ $ virtualenv webapp-vuln
 
 Windowsの場合:
 ```
-myenv\Scripts\activate
+poc-env-11\Scripts\activate
 ```
 
 macOSやLinuxの場合:
 ```
-source myenv/bin/activate
+$ source ./poc-env-11/bin/activate
+```
+
+4. 現在activeになっている環境の確認
+```
+$ echo $VIRTUAL_ENV
+$ which python
 ```
 
 
-4. パッケージのインストール
+5. パッケージのインストール
 仮想環境がアクティベートされている状態で、pipを使ってパッケージをインストールします。これにより、仮想環境内にのみパッケージがインストールされます。
 ``` 
 $ pip3 install flask lxml
 ```
 
-5. ディレクトリ構成
+6. ディレクトリ構成
 ```
-$ cd xpath
+$ cd 11/xpath
 $ ls
 app.py
-index.html
+templates
 ```
 
-6. アプリケーションスタート
+7. アプリケーションスタート
 ```
 [~/xpath]
 $ python3 app.py
+```
+
+8. ブラウザからアクセス
+```
+http://127.0.0.1:5000
 ```
