@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-if (!isset($_GET["token"]) || $_SESSION["token"] !== $_GET["token"]) {
+//if (!isset($_GET["token"]) || $_SESSION["token"] !== $_GET["token"]) {
+if (!isset($_GET["token"])) {
     echo "アクセスが拒否されました！";
     exit();
 }
