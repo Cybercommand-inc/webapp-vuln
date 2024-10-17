@@ -5,14 +5,16 @@
 
 2. コマンドでwebサーバ開始
 ```
- $ python3 -m http.server 777
+ $ python3 -m http.server 7777
 ```
 
-3. ブラウザからhttp://192.168.7.246:777/?index.html 　
-へアクセス。
+3. ブラウザからアクセス
+```
+http://192.168.7.246:7777/?index.html 　
+```
 
 pythonバージョン
 ```
-$ python3 -V                                                                                                                                                                                                                                              127 ⨯
+$ python3 -V
 Python 3.11.9
 ```
