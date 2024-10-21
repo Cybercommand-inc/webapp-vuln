@@ -1,25 +1,13 @@
 # 21-詳細なエラーメッセージ
 
 ### 環境構築
-
-1. dotnetを入れる
-$ sudo apt install dotnet8
-
-2. アプリディレクトリ作成
+1. サーバーの起動
 ```
-$ dotnet new mvc -n vulnerableApplication
-```
-
-3. データ作成
-```
- VulnerableController.cs
- ConfigController.cs
- UserController.cs
- KeyController.cs
-```
-を作成
-
-4. 開始
-```
+$ cd $HOME/projects/webapp-vuln/21/VulnerableApplication
 $ dotnet run
+```
+
+2. ブラウザからアクセス
+```
+http://127.0.0.1:5000
 ```
