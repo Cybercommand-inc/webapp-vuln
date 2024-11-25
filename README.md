@@ -16,7 +16,7 @@ $ cd webapp-vuln
 ### BROKEN CRYSTALSの環境構築
 ```
 $ cd $HOME/projects/webapp-vuln
-$ git clone git@github.com:NeuraLegion/brokencrystals.git
+$ git clone https://github.com/NeuraLegion/brokencrystals.git
 $ cd brokencrystals
 $ docker compose --file=docker-compose.local.yml up -d --build
 ```
