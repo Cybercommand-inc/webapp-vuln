@@ -13,12 +13,18 @@
             z-index: 1;
             font-size: 20px;
             padding: 10px;
+            background-color: red;
         }
     </style>
+  <script>
+    function comp() {
+      alert("商品をご購入いただきありがとうございました。");
+    }
+  </script>
 </head>
 <body>
-    <form action="complete.html">
-    <button>購入する</button>
-    </form>
+  <!--<form action="complete.html">-->
+    <button onclick="comp();">購入する</button>
+  <!--  </form> -->
 </body>
 </html>
